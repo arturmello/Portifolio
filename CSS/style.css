@@ -57,5 +57,58 @@ main {
 }
 
 .skills {
-    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Deixa o título "Skills" alinhado à esquerda */
+    gap: 40px;
+}
+
+.skills h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-left: 60px; 
+}
+
+.skills-content {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skills-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-category h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.skills-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.skills-icons div {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+
+.skills-icons i {
+    font-size: 30px;
+}
+
+
+.skills-icons span {
+    font-size: 1em;
+    text-align: left;
 }
