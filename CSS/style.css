@@ -24,7 +24,7 @@ header {
     margin-top: 80px;
     display: flex;
     flex-flow: row nowrap;
-    gap: 50px;
+    gap: 100px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -33,6 +33,20 @@ header {
     width: 100%;
     max-width: 250px;
     border-radius: 50%;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.text-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #name {
@@ -164,3 +178,307 @@ footer {
     font-size: 0.9em;
     color: #777;
 }
+
+/*tablets na horizontal*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+      gap: 40px;
+      padding: 0 20px;
+      text-align: center;
+    }
+  
+    .left-header img {
+      max-width: 200px;
+    }
+  
+    #name {
+      font-size: 3em;
+    }
+  
+    #function,
+    #tecnologia {
+      font-size: 1.7em;
+    }
+  
+    main {
+      gap: 70px;
+    }
+  
+    .skills h1 {
+      font-size: 2.8em;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .skills-content {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 100px;
+    }
+  
+    .skills-category h3 {
+      font-size: 2em;
+    }
+  
+    .skills-icons i {
+      font-size: 50px;
+    }
+  
+    .projects h1 {
+      font-size: 2.8em;
+    }
+  
+    .SecurePass h1 {
+      font-size: 2.2em;
+    }
+  
+    .contact h2 {
+      font-size: 1.8em;
+    }
+  
+    .social-icons {
+      gap: 20px;
+    }
+  
+    .contact a {
+      font-size: 30px;
+    }
+  }
+  
+/* celulares */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .left-header img {
+        max-width: 180px;
+    }
+
+    .right-header {
+        margin-left: 0;
+    }
+
+    #name {
+        font-size: 2em;
+    }
+
+    #function, 
+    #tecnologia {
+        font-size: 1.2em;
+    }
+
+    .skills h1 {
+        font-size: 2em;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .skills-content {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .skills-category h3 {
+        font-size: 1.5em;
+    }
+
+    .skills-icons i {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+
+    .contact h2 {
+        font-size: 1.4em;
+    }
+
+    .contact a {
+        font-size: 24px;
+    }
+}
+
+/*Tablets em pé e notebooks pequenos*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    .left-header img {
+      max-width: 200px;
+    }
+  
+    #name {
+      font-size: 2.8em;
+    }
+  
+    #function,
+    #tecnologia {
+      font-size: 1.5em;
+    }
+  
+    .skills h1 {
+      font-size: 2.5em;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .skills-content {
+      gap: 100px;
+    }
+  
+    .skills-category h3 {
+      font-size: 1.7em;
+    }
+  
+    .skills-icons i {
+      font-size: 45px;
+    }
+  
+    .contact h2 {
+      font-size: 1.6em;
+    }
+  }
+
+
+/*Celulares grandes e pequenos tablets*/
+  @media (min-width: 481px) and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    .left-header img {
+      max-width: 180px;
+    }
+  
+    #name {
+      font-size: 2.8em;
+    }
+  
+    #function,
+    #tecnologia {
+      font-size: 1.5em;
+    }
+  
+    main {
+      gap: 60px;
+    }
+  
+    .skills h1 {
+      font-size: 2.5em;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .skills-content {
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+    }
+  
+    .skills-category h3 {
+      font-size: 1.8em;
+    }
+  
+    .skills-icons i {
+      font-size: 45px;
+    }
+  
+    .projects h1 {
+      font-size: 2.5em;
+    }
+  
+    .SecurePass h1 {
+      font-size: 2em;
+    }
+  
+    .contact h2 {
+      font-size: 1.6em;
+    }
+  
+    .social-icons {
+      gap: 15px;
+    }
+  
+    .contact a {
+      font-size: 28px;
+    }
+  }
+  
+/*Celulares menores*/
+  @media (max-width: 480px) {
+    header {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .left-header img {
+      max-width: 150px;
+    }
+  
+    #name {
+      font-size: 2.2em;
+    }
+  
+    #function,
+    #tecnologia {
+      font-size: 1.2em;
+    }
+  
+    main {
+      gap: 50px;
+    }
+  
+    .skills h1 {
+      font-size: 2em;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .skills-content {
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
+  
+    .skills-category h3 {
+      font-size: 1.5em;
+    }
+  
+    .skills-icons i {
+      font-size: 40px;
+    }
+  
+    .projects h1 {
+      font-size: 2em;
+    }
+  
+    .SecurePass h1 {
+      font-size: 1.5em;
+    }
+  
+    .contact h2 {
+      font-size: 1.5em;
+    }
+  
+    .social-icons {
+      gap: 10px;
+    }
+  
+    .contact a {
+      font-size: 25px;
+    }
+  }
+  
+  
