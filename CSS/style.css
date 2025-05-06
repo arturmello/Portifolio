@@ -395,7 +395,8 @@ footer {
     font-size: 1.2em;
   }
 
-  .skills h1 {
+  .skills h1,
+  .section-projects {
     font-size: 2em;
     margin-left: 0;
     text-align: center;
@@ -450,7 +451,8 @@ footer {
     font-size: 1.5em;
   }
 
-  .skills h1 {
+  .skills h1,
+  .section-projects {
     font-size: 2.5em;
     margin-left: 0;
     text-align: center;
@@ -603,5 +605,43 @@ footer {
 
   .contact a {
     font-size: 25px;
+  }
+}
+
+/* Adicione isso no final do CSS */
+@media (max-width: 549px) {
+  .skills-icons {
+    justify-content: center; /* Centraliza os blocos */
+  }
+
+  .skills-icons div {
+    min-width: 80px; /* Força largura mínima para evitar quebra */
+  }
+
+  .skills-icons span {
+    text-align: center; /* Centraliza o nome abaixo do ícone */
+  }
+
+  .project-title {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-shrink: 1;
+    font-size: 1.5em;
+  }
+
+  .dev-tag {
+    font-size: 0.7em;
+    white-space: nowrap; /* impede quebra da palavra "desenvolvimento" */
+  }
+}
+
+@media (max-width: 407px) {
+  .skills-icons {
+    gap: 15px; /* Diminui espaço entre os blocos */
+    justify-content: center;
+  }
+
+  .skills-icons div {
+    min-width: 75px;
   }
 }
